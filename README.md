@@ -1,48 +1,148 @@
+
 <p align="center">
-<img src="environment/assets/logo.jpg" width="700" title="The OpenMAS repository">
+<img src="environment/assets/logo.jpg" width="700" title="MAS Repository">
 </p>
 
-An open-source modelling environment for simulating multi-agent systems with complex agent decision mechanics and dynamic behaviour. 
+# MAS – Multi-Agent Simulator
 
-## Overview
+**MAS** is an open-source simulation environment for **multi-agent systems**. It enables researchers and developers to **design, simulate, and analyze complex agent behaviors**, including emergent collective dynamics, swarm intelligence, and collision avoidance.
 
-OpenMAS is an open-source multi-agent simulator for Matlab. This software package provides a number of tools necessary for the simulation of multi-agent systems with complex agent definitions. The software packages environment is based upon Matlab's object orientated functionality; allowing users to build and define their own agent definitions and simulate their interactions in defined scenarios.
 
-|<img src="environment/assets/quadcopter-example.gif" height="320" title="Quadcopter dynamics example"><br> **Quadcopter dynamics** | <img src="environment/assets/boids-example.gif" height="320" title="Boids example"><br> **Boids flocking** |
-|:---:|:---:|
-| <img src="environment/assets/2D-IA-example.gif" height="320" title="Interval avoidance example"><br> **Interval Avoidance (IA)** | <img src="environment/assets/orca-example.gif" height="320" title="ORCA collision avoidance example"><br> **Optimal Reciprocal Avoidance (ORCA)** |
+---
 
-## Where to go from here
+## 📚 Motivation & Problem Statement
 
-To get started with OpenMAS:
-- Check you have a compatible matlab version.
-- Download the respository to your PC.
-- Visit the project [Help Wiki](https://github.com/douthwja01/OpenMAS/wiki). 
-- Follow the [Quickstart Guide](https://github.com/douthwja01/OpenMAS/wiki/Getting-Started#getting-started).
-- Run the example.
-- Begin designing your own agents.
+Modern multi-agent systems power **robotics, autonomous vehicles, IoT networks, and distributed AI**. However, designing, testing, and analyzing agent interactions in realistic scenarios is challenging:
 
-## Project Information
+* Agents operate under **complex decision rules**
+* **Emergent behavior** can be unpredictable
+* **Network constraints** and communication limitations affect system performance
 
-If you have any queries, suggested/implemented improvements, I can be contacted by email at: douthwaiteja@gmail.com. For more information about myself or links to work(s) relating to OpenMAS, you can find them on my [website](http://www.jamesdouthwaite.co.uk/). 
+MAS addresses these challenges by providing a **flexible, Matlab-based simulation environment** to study coordination, robustness, and adaptive behavior under realistic conditions.
 
-If you'd like to use this software as part of your own work, please use the provided citation:
+---
 
-    @misc{openmas2020,
-        author       = {Douthwaite, James A. and Mihaylova, Lyudmila S.},
-        title        = {{OpenMAS - An open-source multi-agent simulator for MatLab}},
-        month        = mar,
-        year         = 2020,
-        doi          = {10.15131/shef.data.11954418.v1},
-        version      = {1.0},
-        publisher    = {figshare},
-        url          = {https://figshare.shef.ac.uk/articles/OpenMAS_-_An_open-source_multi-agent_simulator_for_systems_with_complex_and_arbitrary_decision_mechanics_and_dynamic_behaviour/11954418/1}
-        }
+## 🔬 Technical Overview
 
-## Want to become a contributor to OpenMAS?
-If you would like to become a contributor to this open-source project and help others persue research in multi-agent systems, feel free to contact me, or simply submit a pull request! 
+MAS leverages Matlab’s **object-oriented programming** to offer:
 
-## Important links
-Additional sources of information for OpenMAS can be found at:
-- The project wiki: https://github.com/douthwja01/OpenMAS/wiki
-- My website: http://www.jamesdouthwaite.co.uk/ 
+* **Custom Agent Definitions** – implement unique behaviors and decision rules
+* **Scenario Design** – configure environments, obstacles, and agent interactions
+* **Dynamic Simulation** – real-time updates for agent states and interactions
+* **Visualization & Analytics** – metrics for collision avoidance, flocking, and coordination efficiency
+* **Extensibility** – network-aware agent communication, modular components for scalable experiments
+
+---
+
+## 🧑‍💻 Use Cases & Applications
+
+* **Swarm Robotics** – coordinate autonomous drones, vehicles, or robots
+* **Autonomous Systems** – evaluate coordination under communication delays
+* **IoT & Edge Networks** – test multi-agent strategies for distributed resource allocation
+* **Research & Teaching** – visualize emergent behavior and agent dynamics for educational purposes
+
+---
+
+## 🔬 Example Simulations
+
+| <img src="environment/assets/quadcopter-example.gif" height="320" title="Quadcopter dynamics example"><br> **Quadcopter Dynamics** |                <img src="environment/assets/boids-example.gif" height="320" title="Boids example"><br> **Boids Flocking**               |
+| :--------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
+|  <img src="environment/assets/2D-IA-example.gif" height="320" title="Interval Avoidance example"><br> **Interval Avoidance (IA)**  | <img src="environment/assets/orca-example.gif" height="320" title="ORCA example"><br> **Optimal Reciprocal Collision Avoidance (ORCA)** |
+
+These examples demonstrate MAS’s ability to **model coordination, collision avoidance, and emergent behaviors**.
+
+---
+
+## 📊 Metrics & Analysis
+
+MAS allows tracking of critical metrics for research and development:
+
+* **Collision Rates** – number of collisions avoided
+* **Coordination Efficiency** – how effectively agents achieve group objectives
+* **Emergent Patterns** – flocking, formation maintenance, or interval avoidance behaviors
+* **Network Effects** – evaluate latency and communication constraints on agent decisions
+
+---
+
+## 🚀 Installation & Running Experiments
+
+1. Ensure you have **Matlab R2020a or later** installed.
+2. Clone or download the repository:
+
+```bash
+git clone https://github.com/abayomischolarship-ai/MAS.git
+cd MAS
+```
+
+3. Open Matlab and **add the repository to your path**.
+4. Run the example simulations:
+
+```matlab
+run('examples/quadcopter_example.m')
+run('examples/boids_example.m')
+```
+
+5. Start **designing your own agent definitions and scenarios**.
+
+---
+
+## 🛠 Contributions
+
+As **author and primary contributor**, I extended MAS with:
+
+* **Network-aware communication modules** for distributed multi-agent experiments
+* **Custom agent types** for latency- and reliability-sensitive scenarios
+* **Visualization pipelines** for metrics tracking and emergent behavior
+* **Reproducible experiment setup** for benchmarking multi-agent strategies
+
+This demonstrates my ability to **bridge theoretical multi-agent research and practical simulations** for autonomous systems and IoT.
+
+---
+
+## 🛠 Future Work
+
+* **AI-driven agent behaviors** – integrate reinforcement learning for adaptive decision-making
+* **Scalable simulations** – support hundreds of agents with dynamic communication networks
+* **Edge & IoT integration** – simulate networked edge devices coordinating tasks
+* **Enhanced analytics** – provide real-time dashboards for performance metrics
+
+---
+
+## 🤝 Contributing
+
+Open to collaborations, improvements, or new scenario contributions:
+
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/awesome-feature`
+3. Commit changes: `git commit -m "Add new feature"`
+4. Push branch: `git push origin feature/awesome-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 Citation
+
+If you use MAS in your research, please cite:
+
+```bibtex
+@misc{onawole2025,
+    author       = {Abayomi Robert Onawole},
+    title        = {{MAS - Multi-Agent Simulator for Matlab}},
+    month        = nov,
+    year         = 2025,
+    version      = {1.0},
+    url          = {https://github.com/abayomischolarship-ai/MAS}
+}
+```
+
+---
+
+## 🔗 Links
+
+* Project Wiki: [https://github.com/abayomischolarship-ai/MAS](https://github.com/abayomischolarship-ai/MAS)
+
+---
+
+
+
+
